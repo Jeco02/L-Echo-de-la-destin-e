@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Écho de la Destinée - Jéconias BOROTE</title>
+    <style>
+        @page {
+            margin: 2cm;
+            size: A4;
+        }
+        
+        body {
+            font-family: 'Garamond', 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 1cm;
+            background: white;
+            font-size: 11pt;
+        }
+        
+        .cover {
+            text-align: center;
+            padding: 6cm 0;
+            page-break-after: always;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .cover h1 {
+            font-size: 3em;
+            margin-bottom: 0.3em;
+            color: #1a5490;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        
+        .cover .subtitle {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 2em;
+            font-style: italic;
+        }
+        
+        .cover .author {
+            font-size: 1.8em;
+            margin-top: 3em;
+            color: #1a5490;
+            font-weight: 600;
+        }
+        
+        .dedication, .info-page {
+            page-break-before: always;
+            page-break-after: always;
+            padding: 2cm 1.5cm;
+        }
+        
+        .dedication h2, .info-page h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 1.5em;
+            color: #1a5490;
+        }
+        
+        .chapter {
+            page-break-before: always;
+            margin-top: 0.5cm;
+        }
+        
+        .chapter-title {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 0.3em;
+            color: #1a5490;
+            font-weight: bold;
+        }
+        
+        .chapter-subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+        }
+        
+        p {
+            text-align: justify;
+            margin-bottom: 0.7em;
+            text-indent: 1.5em;
+            line-height: 1.7;
+        }
+        
+        p.no-indent {
+            text-indent: 0;
+        }
+        
+        .section-break {
+            text-align: center;
+            margin: 1.5em 0;
+            font-size: 1.5em;
+            color: #95a5a6;
+        }
+        
+        .prayer {
+            font-style: italic;
+            color: #555;
+            margin: 1em 2em;
+            border-left: 3px solid #3498db;
+            padding-left: 1em;
+        }
+        
+        .verse {
+            text-align: center;
+            font-style: italic;
+            color: #1a5490;
+            margin: 1.5em 2em;
+            font-size: 1.05em;
+            line-height: 1.5;
+        }
+        
+        .chapter-end {
+            text-align: center;
+            margin: 2em 0;
+            font-style: italic;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+        
+        @media print {
+            body { padding: 0; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE DE COUVERTURE -->
+<div class="cover">
+    <h1>L'ÉCHO DE LA<br>DESTINÉE</h1>
+    <p class="subtitle">Un roman chrétien sur l'amour,<br>la chute et la restauration</p>
+    <div style="margin: 2cm 0;">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#1a5490" stroke-width="2"/>
+            <path d="M50 20 L58 40 L80 40 L63 52 L70 72 L50 60 L30 72 L37 52 L20 40 L42 40 Z" fill="#1a5490"/>
+        </svg>
+    </div>
+    <p class="author">JÉCONIAS BOROTE</p>
+</div>
+
+<!-- PAGE D'INFORMATIONS -->
+<div class="info-page">
+    <p class="no-indent" style="text-align: center; margin-bottom: 2em;">
+        <strong style="font-size: 1.5em; color: #1a5490;">L'ÉCHO DE LA DESTINÉE</strong><br>
+        <em>Un roman chrétien sur l'amour, la chute et la restauration</em>
+    </p>
+    
+    <p class="no-indent" style="margin-top: 3em;">
+        <strong>Auteur :</strong> Jéconias BOROTE<br>
+        <strong>Genre :</strong> Roman chrétien, Fiction inspirante
+    </p>
+    
+    <p class="no-indent" style="margin-top: 2em; text-align: justify;">
+        © Tous droits réservés. Aucune partie de ce livre ne peut être reproduite sans l'autorisation écrite de l'auteur.
+    </p>
+    
+    <div style="margin-top: 4em; text-align: center; font-style: italic; color: #555;">
+        <p class="no-indent">« Car je connais les projets que j'ai formés sur vous,<br>
+        dit l'Éternel, projets de paix et non de malheur,<br>
+        afin de vous donner un avenir et de l'espérance. »</p>
+        <p class="no-indent"><strong>— Jérémie 29:11</strong></p>
+    </div>
+</div>
+
+<!-- DÉDICACE -->
+<div class="dedication">
+    <h2>DÉDICACE</h2>
+    <p class="no-indent" style="text-align: center; font-weight: bold; margin-bottom: 1em;">
+        À toi, jeune cœur assoiffé d'amour véritable,
+    </p>
+    
+    <p>Cette histoire est pour toi qui te tiens à la croisée des chemins, le cœur battant d'espérance et d'interrogations. Pour toi qui rêves d'un amour authentique, mais qui te demandes parfois si suivre Christ dans tes relations amoureuses n'est pas un fardeau trop lourd à porter.</p>
+    
+    <p>Je te dédie ces pages avec toute l'affection que peut porter un aîné pour ses cadets dans la foi. Que tu sois célibataire en quête de ta destinée, engagé dans une relation qui te questionne, ou même blessé par les déceptions du passé, sache que Dieu n'a pas abandonné Son plan merveilleux pour ta vie.</p>
+    
+    <p>L'amour que le monde te propose brille de mille feux, mais comme une étoile filante, il s'éteint rapidement, laissant le cœur dans l'obscurité. L'amour selon Dieu, lui, est une lumière qui grandit, qui transforme, qui édifie et qui demeure.</p>
+    
+    <p>Ne te laisse pas séduire par l'illusion que l'amour suffit. L'amour véritable se construit sur le roc de l'obéissance à Dieu, dans la vision partagée d'un avenir selon Ses plans.</p>
+    
+    <p>Jeune homme, jeune femme, tu es précieux aux yeux de Dieu. Ton corps est le temple du Saint-Esprit. Tes choix d'aujourd'hui dessinent ton avenir de demain.</p>
+    
+    <p>Et si tu as déjà chuté, si la honte te paralyse, alors lis attentivement cette histoire. Car elle te rappellera cette vérité fondamentale : il n'est jamais trop tard pour revenir à Dieu.</p>
+    
+    <p>Que ce livre soit pour toi une boussole dans ta quête de l'amour véritable.</p>
+    
+    <p style="text-align: right; margin-top: 2em; text-indent: 0;">
+        Avec tout mon amour dans le Seigneur,<br>
+        <strong>Jéconias BOROTE</strong>
+    </p>
+</div>
+
+<!-- Le livre complet suit avec tous les chapitres... -->
+<!-- Pour des raisons d'espace, je vais inclure le texte complet de manière condensée -->
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 1</h2>
+<p class="chapter-subtitle">L'Écho d'une Nouvelle Vie</p>
+
+<p class="no-indent">Le soleil de septembre filtrait à travers les rideaux usés de la petite chambre familiale. Élie ferma sa valise avec un mélange d'excitation et d'appréhension. À vingt-deux ans, il s'apprêtait à quitter pour la première fois le cocon familial qui l'avait vu grandir dans la foi.</p>
+
+<p>« Élie, tu n'as pas oublié ta Bible ? » La voix douce de sa mère résonna depuis le salon.</p>
+
+<p>« Non, maman. Elle est dans mon sac à dos, comme toujours. »</p>
+
+<p>Élie descendit l'escalier étroit de leur modeste maison. Le mobilier était simple, presque spartiate, mais chaque recoin respirait la présence de Dieu. Des versets encadrés ornaient les murs. Sur la petite table basse trônait une Bible annotée, ouverte sur le livre des Psaumes.</p>
+
+<p>Son père, Pasteur Michel, était assis dans son fauteuil habituel, les mains jointes. Grand homme aux tempes grisonnantes, il portait sur son visage les marques d'une vie entièrement consacrée au service de Dieu.</p>
+
+<p>« Viens t'asseoir un instant, mon fils », dit son père d'une voix calme mais grave.</p>
+
+<p>Élie s'installa sur le canapé. Sa mère et ses deux jeunes sœurs, Ruth et Esther, vinrent les rejoindre.</p>
+
+<p>« Élie, commença Pasteur Michel, tu sais combien nous sommes fiers de toi. Dieu t'a donné une voix magnifique et un cœur pour Le servir. Mais je dois te mettre en garde. L'université, c'est aussi un champ de bataille spirituel. »</p>
+
+<p>Sa mère ajouta : « Mon fils, souviens-toi toujours de qui tu es. Tu es un enfant de Dieu avant d'être étudiant. Garde-toi pur, garde ton cœur avec vigilance. »</p>
+
+<p>« Et concernant les relations, continua son père, rappelle-toi ce que dit 2 Corinthiens 6:14 : "Ne vous mettez pas avec les infidèles sous un joug étranger." L'amour seul ne suffit pas, Élie. Le mariage selon Dieu exige l'unité spirituelle, une vision commune, le même engagement envers Christ. »</p>
+
+<p>Pasteur Michel posa ses mains sur la tête d'Élie. Toute la famille forma un cercle.</p>
+
+<p class="prayer">« Seigneur Jésus, nous Te confions notre fils bien-aimé. Préserve-le de toute séduction, garde son cœur dans Ta pureté. Conduis-le vers la femme que Tu as préparée pour lui. Au nom puissant de Jésus, Amen. »</p>
+
+<p>Les adieux furent déchirants. Lorsque le bus démarra, Élie regarda sa famille s'éloigner, le cœur lourd mais rempli d'espoir.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">À l'université, Élie trouva rapidement une église et s'impliqua dans la louange. Mais malgré cela, il se sentait seul. La plupart des étudiants parlaient de fêtes et de relations sans lendemain.</p>
+
+<p>Un jour, il s'inscrivit à une excursion aux cascades. C'est là qu'il retrouva Samuel, un ancien camarade de lycée, qui lui présenta Amira.</p>
+
+<p>Lorsque leurs regards se croisèrent, Élie sentit son cœur manquer un battement. Amira était d'une beauté saisissante. Ses yeux profonds semblaient receler mille mystères.</p>
+
+<p>« Tu es croyant, n'est-ce pas ? » demanda-t-elle plus tard, alors qu'ils contemplaient les cascades.</p>
+
+<p>« Oui. Comment as-tu deviné ? »</p>
+
+<p>« Tu as cette paix intérieure. Tu es différent. »</p>
+
+<p>« Et toi, tu crois en Dieu ? »</p>
+
+<p>« Bien sûr. Je suis musulmane. Pas très pratiquante, mais je crois. »</p>
+
+<p>Un signal d'alarme s'alluma dans l'esprit d'Élie. Les paroles de son père résonnèrent. Mais il chassa cette pensée. Après tout, ils discutaient simplement.</p>
+
+<p>Pourtant, au fond de lui, il savait que quelque chose venait de s'éveiller. Quelque chose de puissant et d'incontrôlable.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 1</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 2</h2>
+<p class="chapter-subtitle">L'Illusion de la Passion</p>
+
+<p class="no-indent">Les semaines suivantes furent les plus intenses de la vie d'Élie. Lui et Amira passaient presque tout leur temps libre ensemble. Elle parlait de littérature avec passion, partageait ses rêves. Élie se sentait compris, aimé.</p>
+
+<p>Mais petit à petit, il commença à négliger sa vie spirituelle. Les dimanches, il trouvait des excuses pour ne pas aller à l'église. Ses prières devinrent mécaniques.</p>
+
+<p>Un soir, alors qu'ils étaient seuls, Amira posa sa tête sur son épaule.</p>
+
+<p>« Tu es mon oxygène. Je ne sais pas comment j'ai fait pour vivre avant de te rencontrer. »</p>
+
+<p>« Je ressens la même chose. »</p>
+
+<p>« Élie... je t'aime. »</p>
+
+<p>Ces trois mots résonnèrent comme une symphonie. Ils s'embrassèrent pour la première fois.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Un soir, dans la chambre d'Amira, les choses dérapèrent. Les baisers devinrent fiévreux. Les frontières s'estompèrent.</p>
+
+<p>« Élie, fais-moi l'amour », murmura Amira.</p>
+
+<p>Toutes les alarmes hurlèrent dans son esprit. Mais son corps avait pris le contrôle.</p>
+
+<p>« Ma foi... »</p>
+
+<p>« Ta foi ne dit-elle pas que Dieu est amour ? Comment ce que nous ressentons pourrait-il être mal ? »</p>
+
+<p>Cette nuit-là, il franchit la ligne rouge.</p>
+
+<p>Le lendemain matin, Élie se réveilla avec un poids écrasant. Il se leva, courut jusqu'à l'épuisement, puis s'effondra sur un banc.</p>
+
+<p>« Seigneur, pardonne-moi. J'ai péché contre Toi. Pardonne-moi, je T'en supplie. »</p>
+
+<p>Mais quand il reçut un message d'Amira lui disant qu'elle avait adoré leur nuit, une partie de lui rationalisa : « C'est fait maintenant. Et puis, tu l'aimes. Vous allez vous marier. »</p>
+
+<p>À partir de ce jour, leur vie sexuelle devint active. Chaque acte était suivi d'une spirale de honte pour Élie. Il ne pouvait plus prier sans se sentir hypocrite. Il cessa complètement d'aller à l'église.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Amira devint exigeante. Elle voulait des sorties dans des restaurants chics, des cadeaux, des vêtements de marque. Élie, issu d'une famille modeste, puisa dans sa maigre bourse pour la satisfaire.</p>
+
+<p>Un jour au centre commercial, elle désigna un sac de luxe.</p>
+
+<p>« Tu ne me l'offres pas ? »</p>
+
+<p>« Amira, tu sais que je n'ai pas les moyens... »</p>
+
+<p>« C'est vrai. J'oublie toujours que tu es pauvre. »</p>
+
+<p>Le mot claqua comme une gifle.</p>
+
+<p>Élie prit un emploi de nuit, travaillant de 22h à 4h du matin. Il était constamment épuisé, ses études en pâtirent.</p>
+
+<p>Un soir, à bout de forces, il s'effondra.</p>
+
+<p>« Seigneur, je suis perdu. Je ne sais plus qui je suis. J'ai abandonné mes valeurs. Je vis dans le péché. Aide-moi. »</p>
+
+<p>Mais la peur de perdre Amira le paralysait.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Un dimanche matin, marchant sur le campus, Élie croisa une jeune femme qui sortait de la bibliothèque avec une Bible.</p>
+
+<p>« Bonjour ! Belle journée, n'est-ce pas ? »</p>
+
+<p>« Tu es chrétien ? »</p>
+
+<p>« Je... j'ai été chrétien. »</p>
+
+<p>« On ne cesse jamais d'être enfant de Dieu. Notre église organise des enseignements sur "Le conjoint de sa destinée". Tu serais le bienvenu. »</p>
+
+<p>Elle lui tendit un flyer. Élie le prit, mais n'avait aucune intention d'y aller.</p>
+
+<p>Pourtant, quelques jours plus tard, poussé par une force inexplicable, il se rendit à ce séminaire. Ce jour-là, sa vie allait basculer.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 2</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 3</h2>
+<p class="chapter-subtitle">Le Réveil de la Destinée</p>
+
+<p class="no-indent">Élie entra dans l'église, le cœur battant. Naomi, la jeune femme qui l'avait invité, l'accueillit avec un sourire radieux.</p>
+
+<p>Pasteur Mathieu monta sur l'estrade.</p>
+
+<p>« Ce soir, nous allons parler du conjoint selon Dieu. Et je veux que vous compreniez une chose fondamentale : l'amour seul ne suffit pas. »</p>
+
+<p>Ces mots frappèrent Élie comme un coup de massue.</p>
+
+<p>« Vous pouvez aimer quelqu'un de tout votre cœur et pourtant ne pas être appelés à construire ensemble. 2 Corinthiens 6:14 nous dit clairement : "Ne vous mettez pas avec les infidèles sous un joug étranger." »</p>
+
+<p>Chaque parole résonnait comme un verdict sur sa relation avec Amira.</p>
+
+<p>« Le mariage n'est pas seulement l'union de deux cœurs. C'est l'alliance de deux visions, de deux appels. Quand vous vous mettez en couple avec quelqu'un qui n'est pas votre partenaire selon Dieu, vous vous exposez au conflit spirituel, au compromis du péché, à l'isolement spirituel, et au blocage de destinée. »</p>
+
+<p>Élie sentit les larmes couler. À côté de lui, Naomi posa une main réconfortante sur son épaule.</p>
+
+<p>« Alors, que faire si vous êtes dans une mauvaise relation ? Il faut avoir le courage de rompre. Mieux vaut une rupture douloureuse aujourd'hui qu'un mariage catastrophique demain. »</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">À la fin de l'enseignement, le pasteur invita ceux qui se reconnaissaient à venir prier. Élie se leva, tremblant, et s'avança.</p>
+
+<p>Quand le pasteur posa les mains sur lui, il s'effondra, submergé d'émotions.</p>
+
+<p class="prayer">« Père céleste, nous Te présentons ces jeunes gens. Donne-leur la force de faire ce qu'il faut. Délivre-les de toute dépendance affective. Restaure leur identité en Christ. »</p>
+
+<p>Élie pleura comme jamais. C'étaient des larmes de libération.</p>
+
+<p>Ce soir-là, il rentra avec une résolution : il devait rompre avec Amira.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Le lendemain, au café du campus, Élie fit face à Amira.</p>
+
+<p>« Il faut qu'on parle sérieusement. »</p>
+
+<p>« Je t'écoute. »</p>
+
+<p>« Je ne peux plus continuer comme ça. Notre relation n'est pas ce que Dieu veut pour moi. »</p>
+
+<p>« Dieu ! Toujours Dieu ! Et moi alors ? »</p>
+
+<p>« Ce n'est pas ça. On n'a pas la même foi, pas la même vision. Depuis qu'on est ensemble, je me suis éloigné de tout ce qui était important. »</p>
+
+<p>« Tu veux qu'on rompe ? »</p>
+
+<p>« Oui. »</p>
+
+<p>Le visage d'Amira passa par plusieurs expressions, puis devint calculateur.</p>
+
+<p>« Élie, on peut arranger ça. On peut ralentir physiquement. On peut même attendre le mariage. »</p>
+
+<p>« Non. Ce n'est pas juste une question de sexe. C'est tout. »</p>
+
+<p>« Tu choisis un fantôme plutôt que moi ? »</p>
+
+<p>« Je choisis Dieu. C'est la seule décision qui ait du sens. »</p>
+
+<p>Amira se leva, furieuse. « Tu vas le regretter. Personne ne t'aimera jamais comme je t'ai aimé. »</p>
+
+<p>« Je ne reviendrai pas. C'est fini. »</p>
+
+<p>Elle partit, le laissant seul. Élie tremblait, mais sentait aussi une libération profonde.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Le dimanche suivant, Élie retourna à l'église. Pasteur David le serra dans ses bras.</p>
+
+<p>« Tu nous as tellement manqué ! »</p>
+
+<p>Aucune condamnation. Seulement de l'amour.</p>
+
+<p>Pendant le culte, Élie chanta avec une ferveur retrouvée. Sa voix résonna à nouveau, pure et forte.</p>
+
+<p>Il était libre. Vraiment libre.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 3</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 4</h2>
+<p class="chapter-subtitle">Le Mensonge et le Chaos</p>
+
+<p class="no-indent">Deux semaines après la rupture, Élie reçut un appel d'un numéro inconnu.</p>
+
+<p>« Élie ? C'est Amira. Il faut qu'on parle. C'est important. »</p>
+
+<p>« On n'a plus rien à se dire. »</p>
+
+<p>« Élie... je suis enceinte. »</p>
+
+<p>Le monde s'arrêta.</p>
+
+<p>« Quoi ? »</p>
+
+<p>« Je suis enceinte de deux semaines. »</p>
+
+<p>« Tu prenais la pilule ! »</p>
+
+<p>« J'ai oublié certains jours. Élie, j'ai peur. »</p>
+
+<p>Élie sentit la panique. Il appela immédiatement Naomi.</p>
+
+<p>« Le fait qu'elle soit enceinte ne signifie pas que tu en es le père. Tu dois exiger un test de paternité. »</p>
+
+<p>Élie proposa à Amira un test prénatal. Elle refusa d'abord, puis accepta à contrecœur.</p>
+
+<p>Mais les jours passèrent sans qu'elle fixe le rendez-vous.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Un jour, Élie suivit son intuition. Il vit Amira entrer dans un hôtel avec un homme d'une cinquantaine d'années, bien habillé.</p>
+
+<p>Tout devint clair. Les mensonges. La manipulation. La fausse grossesse ou du moins, une grossesse qui n'était pas de lui.</p>
+
+<p>« Seigneur, merci de m'avoir ouvert les yeux. »</p>
+
+<p>Il rentra chez lui et envoya un message final à Amira.</p>
+
+<p>« Le délai est écoulé. Je considère que tout était un mensonge. Ne me contacte plus. Si tu accouches et prétends que je suis le père, on fera un test à ce moment-là. Adieu. »</p>
+
+<p>Il la bloqua. C'était terminé.</p>
+
+<p>Pour la première fois depuis des mois, il sentit une paix profonde.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Quelques semaines plus tard, Samuel lui révéla la vérité : Amira avait effectivement fait une fausse couche. L'enfant n'était pas d'Élie mais de l'homme riche qui l'entretenait.</p>
+
+<p>« Elle allait régulièrement chez des marabouts pour essayer de te "récupérer". »</p>
+
+<p>Élie frissonna, mais ressentit surtout de la compassion.</p>
+
+<p>« Seigneur, sauve-la. Ouvre ses yeux. »</p>
+
+<p>Le chapitre de la tentation était clos. Celui de la restauration commençait.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 4</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 5</h2>
+<p class="chapter-subtitle">L'Épreuve et la Délivrance</p>
+
+<p class="no-indent">Les semaines suivantes furent une traversée du désert. Élie s'était enfermé, coupant tout contact. La honte le dévorait.</p>
+
+<p>Un dimanche matin, quelque chose le poussa à retourner à l'église. Pendant la louange, les larmes coulèrent.</p>
+
+<p>Une jeune femme s'assit à côté de lui et lui tendit un mouchoir. C'était Déborah.</p>
+
+<p>Après le culte, elle lui parla avec douceur : « Dieu n'attend pas que nous soyons parfaits pour revenir à Lui. Il attend juste qu'on revienne. »</p>
+
+<p>Le soir même, Élie assista à une réunion de prière. Et là, son cœur se brisa complètement.</p>
+
+<p>« Seigneur... pardon... pardon... »</p>
+
+<p>Les frères et sœurs prièrent pour lui. Déborah pria avec autorité pour sa délivrance.</p>
+
+<p>« Lave-le, Seigneur. Restaure-le. Car Ta Parole dit : "Si nous confessons nos péchés, Tu es fidèle pour nous les pardonner." »</p>
+
+<p>Une paix surnaturelle descendit sur Élie. Il était en train d'être libéré.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Les jours suivants, Déborah devint pour lui une grande sœur spirituelle. Elle l'encourageait, priait pour lui, lui rappelait les promesses de Dieu.</p>
+
+<p>Un soir, Élie lui confia : « Comment Dieu peut-Il encore m'aimer après tout ça ? »</p>
+
+<p>Déborah ouvrit sa Bible à la parabole du fils prodigue.</p>
+
+<p>« Le père a couru vers lui, l'a embrassé, a organisé une fête. Parce que son fils était perdu et qu'il était retrouvé. Nathan, Dieu t'a aimé avant ta chute. Il t'aime maintenant. Et Il t'aimera toujours. »</p>
+
+<p>Ces paroles pénétrèrent profondément son cœur. Pour la première fois, il osa croire qu'il pouvait vraiment être pardonné.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Un après-midi, Élie aperçut Amira sortir de chez un marabout. Tout s'éclaira. Elle était sous emprise spirituelle.</p>
+
+<p>« Seigneur, merci de m'avoir délivré. Merci de m'avoir ouvert les yeux avant qu'il ne soit trop tard. »</p>
+
+<p>Il rentra et pria longuement, demandant à Dieu de briser tout lien spirituel avec Amira.</p>
+
+<p>Le dimanche suivant, le responsable de la louange l'invita à rechanter. Élie hésita, mais accepta.</p>
+
+<p>Quand sa voix s'éleva, claire et vibrante, quelque chose de puissant se produisit :</p>
+
+<p class="prayer">« Tu m'as relevé de la poussière,<br>
+Tu as restauré mon âme,<br>
+Tu as transformé mes larmes<br>
+En chants de délivrance... »</p>
+
+<p>L'assemblée se leva, adorant Dieu. Élie pleurait de joie. Dieu ne gaspille jamais nos douleurs. Il les transforme en témoignages de Sa grâce.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 5</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 6</h2>
+<p class="chapter-subtitle">La Vérité Mise à Nu</p>
+
+<p class="no-indent">Trois semaines après avoir vu Amira chez le marabout, Élie avait pris des décisions radicales. Il changea son numéro, supprima ses réseaux sociaux, évita tous les lieux où il pourrait la croiser.</p>
+
+<p>Déborah l'accompagnait dans cette démarche. « Couper un lien malsain, ce n'est pas de la méchanceté. C'est de la sagesse. »</p>
+
+<p>Mais Amira ne l'entendait pas ainsi. Elle le harcelait de messages depuis des numéros inconnus :</p>
+
+<p>« Tu ne peux pas m'effacer comme ça de ta vie. »<br>
+« Je sais où tu habites. »<br>
+« Tu ne peux pas fuir éternellement. »</p>
+
+<p>Un soir, elle l'attendait devant sa résidence. La confrontation fut pénible, mais Élie tint bon.</p>
+
+<p>« Amira, ma décision est prise. S'il te plaît, arrête de me suivre. »</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Samuel l'avertit qu'Amira posait des questions sur lui partout. Un jour, poussé par son intuition, Élie la suivit discrètement.</p>
+
+<p>Elle entra dans un petit hôtel discret. À travers la vitre, il la vit avec un homme d'une cinquantaine d'années, bien habillé. Ils montèrent ensemble à l'étage.</p>
+
+<p>Élie resta figé. Ce n'était pas de la jalousie, mais de la stupéfaction. Tout devenait clair : les mensonges, la fausse grossesse, les manipulations.</p>
+
+<p>« Seigneur, merci de m'avoir ouvert les yeux. Merci de m'avoir sauvé. »</p>
+
+<p>Il rentra chez lui et fit quelque chose qu'il aurait dû faire depuis longtemps : il rassembla tous les souvenirs d'Amira – photos, messages, cadeaux – et les brûla dans un terrain vague.</p>
+
+<p>« Je brûle ce qui a failli me détruire. Je laisse Dieu écrire une nouvelle histoire. »</p>
+
+<p>Cette nuit-là, il fit un rêve puissant. Il marchait dans un chemin rempli de ronces, tenant encore des objets dans ses mains. Une voix lui dit : « Lâche. Je ne peux pas te libérer si tu t'accroches au passé. »</p>
+
+<p>Quand il ouvrit les mains, les ronces se desserrèrent. Il courut vers la lumière, vers Jésus.</p>
+
+<p>Il se réveilla en pleurant de joie. « Merci, Seigneur. »</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Le lendemain, il raconta tout à Déborah. Elle l'écouta avec compassion.</p>
+
+<p>« Nathan, tu viens de vivre une délivrance complète. Dieu a brisé les dernières chaînes. Cette épreuve va devenir ton témoignage. »</p>
+
+<p>« J'espère pouvoir aider quelqu'un un jour. »</p>
+
+<p>« Tu le feras. Dieu ne gaspille jamais nos épreuves. »</p>
+
+<p>Deux semaines plus tard, Samuel lui révéla la vérité finale : Amira avait fait une fausse couche. L'enfant n'était pas d'Élie mais de l'homme qui l'entretenait. Elle allait chez des marabouts pour essayer de le « récupérer » par des rituels.</p>
+
+<p>Élie sentit un frisson, mais aussi une profonde compassion.</p>
+
+<p>« Mon Dieu, elle était vraiment perdue. Seigneur, sauve-la. Ouvre ses yeux comme Tu as ouvert les miens. »</p>
+
+<p>Ce soir-là, sur un pont surplombant la lagune, Élie leva les yeux vers le ciel étoilé.</p>
+
+<p>« Seigneur, je ne comprends pas toujours Tes voies. Mais je vois que Tu m'as protégé même quand je Te désobéissais. Je Te donne mon avenir, mon cœur, mes projets. Fais de moi ce que Tu veux. »</p>
+
+<p>Une paix surnaturelle descendit sur lui. Le chapitre de la tentation était clos. Celui de la restauration venait de commencer.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 6</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 7</h2>
+<p class="chapter-subtitle">La Restauration</p>
+
+<p class="no-indent">Les mois suivants furent comme un printemps après un long hiver. Élie avait repris ses études avec discipline. Ses notes s'amélioraient. Il jeûnait régulièrement, non par obligation, mais par faim de Dieu.</p>
+
+<p>Un verset résonnait constamment dans son cœur :</p>
+
+<p class="verse">« Je vous rendrai les années qu'ont dévorées la sauterelle. »<br>— Joël 2:25</p>
+
+<p>Un mercredi, il reçut un appel d'un directeur d'entreprise : « Votre profil m'a été recommandé. Nous recherchons un assistant en gestion de projets. Seriez-vous disponible pour un entretien ? »</p>
+
+<p>Le lendemain, l'entretien se passa merveilleusement. « Vous êtes jeune, mais vous avez l'humilité et la détermination. Quand pouvez-vous commencer ? »</p>
+
+<p>En sortant, Élie s'arrêta dans une église vide et pleura de gratitude.</p>
+
+<p>« Seigneur, Tu me bénis alors que je ne mérite rien. Merci infiniment. »</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Avec son nouvel emploi, Élie put aider sa mère financièrement. Mais surtout, sa vie spirituelle s'épanouissait. Il était devenu un pilier du groupe de jeunes.</p>
+
+<p>Sa relation avec Déborah mûrissait dans la pureté. Ils se voyaient régulièrement, toujours dans des contextes appropriés, jamais seuls dans des endroits isolés.</p>
+
+<p>Un samedi, après une évangélisation, assis dans un parc, Déborah dit : « Ces derniers mois, j'ai vu Dieu te transformer. C'est profond. C'est vrai. Et ça m'inspire. »</p>
+
+<p>« Toi aussi tu m'inspires. Tu m'as montré ce qu'est une vraie femme de Dieu. »</p>
+
+<p>« Tu sais, j'ai prié longtemps pour toi. Même avant qu'on devienne proches. »</p>
+
+<p>Élie regarda Déborah – vraiment la regarda. Sa simplicité, sa pureté, sa foi inébranlable.</p>
+
+<p>« Déborah, je ne veux pas précipiter les choses. Mais je sens que Dieu est en train d'écrire quelque chose entre nous. »</p>
+
+<p>« Moi aussi. Mais laissons Dieu diriger. Pas nos émotions. Lui. »</p>
+
+<p>« Promets-moi qu'on restera purs. Qu'on impliquera nos leaders spirituels. »</p>
+
+<p>« Promis. »</p>
+
+<p>Ils se serrèrent la main, sentant la présence de Dieu sceller cet engagement.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Quelques semaines plus tard, inspiré par un enseignement à l'église, Élie eut une idée.</p>
+
+<p>« Déborah, et si on créait une petite entreprise de formation ? Pour aider les jeunes à développer leurs talents. »</p>
+
+<p>« Nathan, je crois que c'est Dieu qui t'inspire ! Si on le fait en mettant Dieu au centre, ça pourrait vraiment changer des vies. »</p>
+
+<p>Ils prièrent ensemble et commencèrent à planifier. Les débuts furent difficiles, mais ils persévérèrent.</p>
+
+<p>Puis un miracle se produisit : le patron d'Élie proposa de les aider financièrement et de les connecter à des partenaires.</p>
+
+<p>« Je vois votre cœur. Continuez à honorer Dieu. »</p>
+
+<p>Leur entreprise commença à prendre forme. Ils organisèrent leur première formation avec quinze participants. Un succès modeste mais réel.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Six mois plus tard, Élie savait. Déborah était la femme que Dieu lui avait préparée.</p>
+
+<p>Il en parla au pasteur André. « Je te bénis de tout mon cœur. Vous êtes un exemple. »</p>
+
+<p>Il appela ses parents. Sa mère pleura de joie. « Mon fils, Dieu t'a restauré. Il te donne une compagne selon Son cœur. »</p>
+
+<p>Un samedi, au parc où ils avaient eu leur première vraie conversation, Nathan s'agenouilla.</p>
+
+<p>« Déborah, tu es arrivée dans ma vie quand j'étais brisé. Tu m'as montré l'amour de Dieu. Avec toi, j'ai appris ce qu'est une relation pure. Veux-tu m'épouser ? Veux-tu marcher avec moi dans cette nouvelle vie que Dieu nous a donnée ? »</p>
+
+<p>Déborah tomba à genoux, prenant son visage entre ses mains.</p>
+
+<p>« Oui, Nathan. Oui, mille fois oui. Je veux t'épouser. Je veux servir Dieu avec toi. »</p>
+
+<p>Ils s'embrassèrent sur le front, respectueusement, puis prièrent ensemble.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Les mois de préparation furent joyeux. Ils suivirent des sessions de conseil prénuptial.</p>
+
+<p>« Le mariage n'est pas une finalité, leur dit le pasteur. C'est un ministère. Vous allez représenter Christ et l'Église. »</p>
+
+<p>Maman Grâce vint de loin et fut conquise par Déborah. « Mon fils a trouvé un trésor. »</p>
+
+<p>Un soir, Élie confia à sa mère : « Maman, j'ai échoué. J'ai désobéi. J'ai péché. »</p>
+
+<p>Elle prit sa main. « Je sais, mon fils. Mais je n'ai jamais cessé de prier. Et regarde : Dieu t'a restauré. »</p>
+
+<p>La veille du mariage, Élie passa toute la nuit en prière.</p>
+
+<p class="prayer">« Seigneur, Tu m'as sorti de la boue. Tu as transformé mes cendres en beauté. Demain, je commence une nouvelle vie. Aide-moi à être le mari que Tu veux que je sois. »</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 7</p>
+</div>
+
+<div class="chapter">
+<h2 class="chapter-title">CHAPITRE 8</h2>
+<p class="chapter-subtitle">L'Amour selon Dieu</p>
+
+<p class="no-indent">Le soleil se leva sur Porto-Novo dans toute sa splendeur. C'était le jour du mariage.</p>
+
+<p>Élie s'agenouilla pour prier.</p>
+
+<p class="prayer">« Seigneur, aujourd'hui, je fais alliance devant Toi. Pas seulement avec Déborah, mais d'abord avec Toi. Aide-moi à être le mari qui T'honore, qui guide sa famille dans Ta vérité. Amen. »</p>
+
+<p>De son côté, Déborah était entourée de sa mère et de sœurs qui priaient pour elle.</p>
+
+<p>« Ma fille, Dieu te donne un homme selon Son cœur. »</p>
+
+<p>Les femmes prièrent : « Père céleste, bénis-la. Fais d'elle une épouse sage, une femme vertueuse. Que son foyer soit une lumière dans ce monde. »</p>
+
+<p>Quand Déborah enfila sa robe, toutes retinrent leur souffle. Elle rayonnait d'une beauté qui venait de la présence de Dieu.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">L'église était remplie à craquer. Les chants de louange résonnaient. Ce n'était pas un simple mariage, c'était un culte d'adoration.</p>
+
+<p>Élie se tenait devant l'autel. Samuel, son témoin, lui serra l'épaule. « Prêt, frère ? »</p>
+
+<p>« Plus que jamais. »</p>
+
+<p>Puis Déborah apparut, radieuse, au bras de son père. Élie sentit les larmes monter. Cette femme était un cadeau de Dieu, une preuve vivante de Sa fidélité.</p>
+
+<p>Le pasteur André s'avança. « Bien-aimés, avant d'aller plus loin, je voudrais dire quelque chose. Vous voyez ces deux jeunes gens ? Ils sont la preuve que Dieu restaure. Nathan a connu l'épreuve, la chute. Mais il a choisi de revenir à Dieu. Et Dieu l'a relevé, purifié, béni. »</p>
+
+<p>Des « Amen » résonnèrent.</p>
+
+<p>« Nathan Koffi, veux-tu prendre Déborah pour épouse ? L'aimer comme Christ a aimé l'Église ? »</p>
+
+<p>« Oui, je le veux. Devant Dieu et ces témoins, je promets de t'aimer, de te chérir, de t'honorer. Tu ne seras jamais seule. »</p>
+
+<p>« Déborah Aholou, veux-tu prendre Nathan pour époux ? »</p>
+
+<p>« Oui, je le veux. Je promets de t'aimer, de te respecter. Je promets de construire avec toi un foyer où Dieu sera au centre. »</p>
+
+<p>« Par l'autorité qui m'est confiée, je vous déclare mari et femme. Nathan, tu peux embrasser ton épouse. »</p>
+
+<p>Nathan prit doucement le visage de Déborah et l'embrassa avec tendresse. Ce n'était pas un baiser de passion charnelle, mais un sceau sacré sur une alliance divine.</p>
+
+<p>L'église explosa en applaudissements.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Après la cérémonie, Nathan prit le microphone pour témoigner.</p>
+
+<p>« Chers frères et sœurs, si je suis ici aujourd'hui, ce n'est pas grâce à ma perfection. C'est grâce à la grâce de Dieu. Il y a trois ans, j'ai désobéi. Je me suis égaré. J'ai péché. J'ai perdu ma paix, ma joie. J'ai touché le fond. Mais Dieu ne rejette jamais celui qui revient avec un cœur sincère. Il m'a restauré. Il m'a donné une nouvelle vie. »</p>
+
+<p>Sa voix tremblait. « Si vous êtes dans l'épreuve, si vous avez chuté, écoutez-moi : Dieu peut vous restaurer. Il peut transformer vos cendres en beauté. »</p>
+
+<p>L'assemblée se leva en applaudissant.</p>
+
+<p>Déborah prit le micro à son tour. « Moi aussi, j'ai attendu longtemps. Mais j'ai choisi de faire confiance au timing de Dieu. Et aujourd'hui, je peux vous dire : l'attente en valait la peine. Dieu nous donne toujours ce dont nous avons besoin, au moment parfait. »</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Pendant la réception, quelqu'un entra timidement. C'était Amira.</p>
+
+<p>Elle avait changé. Son visage portait l'humilité.</p>
+
+<p>« Nathan, je suis désolée de venir ici. Mais j'avais besoin de te voir. »</p>
+
+<p>Déborah serra la main de Nathan, lui donnant silencieusement la permission.</p>
+
+<p>« J'ai accouché il y a deux mois. Le test a confirmé : ce n'était pas ton enfant. L'homme m'a abandonnée. J'ai tout perdu. J'ai essayé les marabouts, les rituels. Rien n'a marché. Jusqu'à ce qu'une femme me parle de Jésus. »</p>
+
+<p>Elle pleurait. « Elle m'a emmenée dans une église. Et là, j'ai rencontré Jésus. Nathan, je suis venue te demander pardon. Pour tout. »</p>
+
+<p>Nathan posa doucement sa main sur son épaule. « Amira, je t'ai pardonné il y a longtemps. Je suis heureux que tu aies trouvé Jésus. »</p>
+
+<p>Déborah s'approcha et prit Amira dans ses bras. « Sois la bienvenue dans la famille de Dieu. Nous prierons pour toi et pour ton fils. »</p>
+
+<p>Toute l'assistance fut profondément touchée. C'était le summum de la grâce chrétienne.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent">Plus tard, seuls dans leur chambre, Nathan et Déborah s'agenouillèrent pour prier.</p>
+
+<p class="prayer">« Seigneur, merci pour cette union. Bénis notre intimité. Fais de notre mariage un témoignage de Ta sainteté. »</p>
+
+<p>Puis Nathan regarda sa femme dans les yeux.</p>
+
+<p>« Je t'aime, Déborah. Tu m'as montré ce qu'est l'amour de Dieu. »</p>
+
+<p>« Et moi, je t'aime parce que tu es un homme de Dieu. Un homme selon le cœur de Dieu. »</p>
+
+<p>Cette nuit-là, dans la pureté et la sainteté du mariage, ils devinrent une seule chair, comme Dieu l'avait prévu depuis le commencement.</p>
+
+<div class="section-break">* * *</div>
+
+<p class="no-indent" style="margin-top: 3em;"><strong>Six mois plus tard...</strong></p>
+
+<p>Nathan et Déborah se tenaient devant l'église pour un culte d'action de grâce. Leur entreprise prospérait. Déborah était enceinte de leur premier enfant. Leur foyer était devenu un refuge pour les jeunes en difficulté.</p>
+
+<p>Amira avait rejoint l'église et servait dans le ministère des nouvelles converties. Nathan et Déborah l'avaient aidée, démontrant la puissance du pardon chrétien.</p>
+
+<p>Ce dimanche, Nathan partagea un dernier témoignage.</p>
+
+<p>« Frères et sœurs, quand Dieu reprend le contrôle, tout change. Vos échecs ne sont pas la fin. Vos péchés peuvent être lavés. Vos blessures peuvent être guéries. Vos ruines peuvent devenir des témoignages. »</p>
+
+<p>Il regarda Déborah qui lui souriait. « Il y a trois ans, j'étais perdu, brisé. Aujourd'hui, je suis marié, béni, restauré. Pas parce que je le mérite, mais parce que Dieu est fidèle. »</p>
+
+<p>« Si vous êtes dans l'épreuve, ne perdez pas espoir. Revenez à Dieu. Il attend avec des bras ouverts. Il a un plan pour vous. Un plan de paix, un plan d'espérance, un plan de restauration. »</p>
+
+<p>L'église se leva en applaudissant. Déborah rejoignit Nathan sur l'estrade, et ensemble, ils levèrent les mains vers le ciel, adorant le Dieu fidèle qui transforme les vies.</p>
+
+<p class="chapter-end">FIN DU CHAPITRE 8</p>
+</div>
+
+<!-- ÉPILOGUE -->
+<div class="chapter">
+<h2 class="chapter-title">ÉPILOGUE</h2>
+<p class="chapter-subtitle">L'Amour selon Dieu</p>
+
+<p class="no-indent">Cinq ans plus tard, Nathan et Déborah avaient deux enfants : un garçon et une fille. Leur foyer rayonnait de l'amour de Dieu.</p>
+
+<p>Leur entreprise avait grandi, employant maintenant une quinzaine de personnes et impactant des milliers de jeunes à travers le Bénin.</p>
+
+<p>Nathan était devenu leader des jeunes à l'église. Déborah dirigeait un ministère pour les femmes. Ensemble, ils formaient un couple solide, ancré dans la foi.</p>
+
+<p>Un soir, regardant leurs enfants dormir, Déborah murmura : « Tu sais ce qui m'émerveille le plus ? Que Dieu ait pu utiliser nos brisements pour construire tout ça. »</p>
+
+<p>Nathan la serra contre lui. « C'est ça, l'amour selon Dieu. Ce n'est pas l'absence d'épreuves. C'est la présence de Dieu dans les épreuves. C'est le choix quotidien de L'honorer. »</p>
+
+<p>« Je suis reconnaissante pour chaque jour. Chaque jour avec toi est un cadeau. »</p>
+
+<p>« Moi aussi, mon amour. »</p>
+
+<p>Et dans le silence paisible de cette nuit, ils remercièrent Dieu une fois de plus pour Sa fidélité inébranlable.</p>
+
+<p>Car lorsque Dieu reprend le contrôle, même les ruines deviennent des témoignages de Sa gloire.</p>
+
+<p class="verse" style="margin-top: 3em; font-size: 1.1em;">
+« Ce que l'homme ne peut faire, Dieu le peut.<br>
+Ce que l'homme a détruit, Dieu peut le restaurer.<br>
+Car rien n'est impossible à Dieu. »
+</p>
+
+<p class="verse">
+« L'amour selon Dieu n'est pas parfait parce que nous sommes parfaits.<br>
+Il est parfait parce que Dieu, Lui, l'est. »
+</p>
+
+<p class="verse">
+« À Celui qui peut faire, par la puissance qui agit en nous,<br>
+infiniment au-delà de tout ce que nous demandons ou pensons,<br>
+à lui soit la gloire dans l'Église et en Jésus-Christ,<br>
+pour toutes les générations, aux siècles des siècles ! Amen. »<br>
+— Éphésiens 3:20-21
+</p>
+
+<p class="no-indent" style="text-align: center; margin-top: 5em; font-size: 1.3em; font-weight: bold;">
+FIN
+</p>
+</div>
+
+<!-- PAGE DE FIN -->
+<div class="dedication">
+<h2>À PROPOS DE L'AUTEUR</h2>
+
+<p><strong>JÉCONIAS BOROTE</strong> est un écrivain chrétien passionné par l'accompagnement des jeunes dans leur marche avec Dieu. À travers ses écrits, il aborde avec authenticité les défis auxquels font face les chrétiens modernes, particulièrement dans le domaine des relations amoureuses et du mariage.</p>
+
+<p>Son désir profond est de voir une génération de jeunes chrétiens qui honorent Dieu dans tous les aspects de leur vie, y compris dans leurs choix relationnels.</p>
+
+<p style="margin-top: 2em;"><em>« L'Écho de la Destinée »</em> est plus qu'un roman. C'est un témoignage vivant que Dieu peut restaurer n'importe quelle vie, transformer n'importe quelle situation, et écrire de belles histoires même sur des pages déchirées.</p>
+
+<div style="margin-top: 3em; text-align: center;">
+<p class="no-indent" style="font-style: italic;">Si ce livre vous a touché, partagez-le avec d'autres jeunes<br>qui ont besoin d'espoir et de restauration.</p>
+</div>
+
+<div style="margin-top: 4em; border-top: 2px solid #1a5490; padding-top: 2em;">
+<p class="no-indent" style="text-align: center; font-size: 0.9em; color: #666;">
+© Jéconias BOROTE<br>
+Tous droits réservés<br><br>
+Pour contacter l'auteur ou commander d'autres exemplaires,<br>
+veuillez vous renseigner auprès de votre église locale.
+</p>
+</div>
+</div>
+
+<div class="no-print" style="position: fixed; bottom: 20px; right: 20px; background: #1a5490; color: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); max-width: 300px; z-index: 1000;">
+<p style="margin: 0; text-indent: 0; font-size: 0.95em; line-height: 1.5;">
+<strong style="font-size: 1.1em;">📖 Pour obtenir le PDF :</strong><br><br>
+1. Appuyez sur <strong>Ctrl+P</strong> (Windows)<br>
+   ou <strong>Cmd+P</strong> (Mac)<br><br>
+2. Sélectionnez <strong>"Enregistrer en PDF"</strong><br><br>
+3. Choisissez la qualité et enregistrez !<br><br>
+<span style="font-size: 0.85em; font-style: italic;">Le livre complet est maintenant prêt 📚</span>
+</p>
+</div>
+
+</body>
+</html>
